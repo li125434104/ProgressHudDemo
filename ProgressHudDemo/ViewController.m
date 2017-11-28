@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SVProgressHUD+Extention.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [SVProgressHUD showLoading:@"上传中"];
+    
+    [self performSelector:@selector(hudDismiss) withObject:nil afterDelay:5];
+}
+
+- (void)hudDismiss {
+    [SVProgressHUD dismiss];
 }
 
 

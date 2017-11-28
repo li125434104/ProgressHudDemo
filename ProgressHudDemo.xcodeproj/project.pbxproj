@@ -13,9 +13,12 @@
 		A1F0DDB61FCD1242009B388F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F0DDB51FCD1242009B388F /* Assets.xcassets */; };
 		A1F0DDB91FCD1242009B388F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F0DDB71FCD1242009B388F /* LaunchScreen.storyboard */; };
 		A1F0DDBC1FCD1242009B388F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0DDBB1FCD1242009B388F /* main.m */; };
+		A1F0DDC41FCD15FF009B388F /* SVProgressHUD+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0DDC31FCD15FF009B388F /* SVProgressHUD+Extention.m */; };
+		AAC79ABF5EEF980B888C52C0 /* Pods_ProgressHudDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20493689308394955A0730D /* Pods_ProgressHudDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		438DD7D78004B297494A4F5D /* Pods-ProgressHudDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHudDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgressHudDemo/Pods-ProgressHudDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A1F0DDA91FCD1242009B388F /* ProgressHudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressHudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F0DDAC1FCD1242009B388F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1F0DDAD1FCD1242009B388F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		A1F0DDB81FCD1242009B388F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F0DDBA1FCD1242009B388F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1F0DDBB1FCD1242009B388F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1F0DDC21FCD15FF009B388F /* SVProgressHUD+Extention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+Extention.h"; sourceTree = "<group>"; };
+		A1F0DDC31FCD15FF009B388F /* SVProgressHUD+Extention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Extention.m"; sourceTree = "<group>"; };
+		CF97DFC24121140892FB3FC6 /* Pods-ProgressHudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgressHudDemo/Pods-ProgressHudDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F20493689308394955A0730D /* Pods_ProgressHudDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgressHudDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC79ABF5EEF980B888C52C0 /* Pods_ProgressHudDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472B2858B53623FC49C28B2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF97DFC24121140892FB3FC6 /* Pods-ProgressHudDemo.debug.xcconfig */,
+				438DD7D78004B297494A4F5D /* Pods-ProgressHudDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1F0DDA01FCD1242009B388F = {
 			isa = PBXGroup;
 			children = (
 				A1F0DDAB1FCD1242009B388F /* ProgressHudDemo */,
 				A1F0DDAA1FCD1242009B388F /* Products */,
+				472B2858B53623FC49C28B2E /* Pods */,
+				B89DC561DE8CA44902FA31AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,8 @@
 				A1F0DDAD1FCD1242009B388F /* AppDelegate.m */,
 				A1F0DDAF1FCD1242009B388F /* ViewController.h */,
 				A1F0DDB01FCD1242009B388F /* ViewController.m */,
+				A1F0DDC21FCD15FF009B388F /* SVProgressHUD+Extention.h */,
+				A1F0DDC31FCD15FF009B388F /* SVProgressHUD+Extention.m */,
 				A1F0DDB21FCD1242009B388F /* Main.storyboard */,
 				A1F0DDB51FCD1242009B388F /* Assets.xcassets */,
 				A1F0DDB71FCD1242009B388F /* LaunchScreen.storyboard */,
@@ -71,6 +92,14 @@
 			path = ProgressHudDemo;
 			sourceTree = "<group>";
 		};
+		B89DC561DE8CA44902FA31AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20493689308394955A0730D /* Pods_ProgressHudDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F0DDBF1FCD1242009B388F /* Build configuration list for PBXNativeTarget "ProgressHudDemo" */;
 			buildPhases = (
+				D6DDD4A37EAB61A150E31DB6 /* [CP] Check Pods Manifest.lock */,
 				A1F0DDA51FCD1242009B388F /* Sources */,
 				A1F0DDA61FCD1242009B388F /* Frameworks */,
 				A1F0DDA71FCD1242009B388F /* Resources */,
+				D3B4D09706813C557CA5D256 /* [CP] Embed Pods Frameworks */,
+				8B1CE0758BBE7BE40B5328A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,11 +169,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B1CE0758BBE7BE40B5328A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgressHudDemo/Pods-ProgressHudDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B4D09706813C557CA5D256 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProgressHudDemo/Pods-ProgressHudDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgressHudDemo/Pods-ProgressHudDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DDD4A37EAB61A150E31DB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProgressHudDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1F0DDA51FCD1242009B388F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F0DDC41FCD15FF009B388F /* SVProgressHUD+Extention.m in Sources */,
 				A1F0DDB11FCD1242009B388F /* ViewController.m in Sources */,
 				A1F0DDBC1FCD1242009B388F /* main.m in Sources */,
 				A1F0DDAE1FCD1242009B388F /* AppDelegate.m in Sources */,
@@ -276,6 +363,7 @@
 		};
 		A1F0DDC01FCD1242009B388F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF97DFC24121140892FB3FC6 /* Pods-ProgressHudDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +378,7 @@
 		};
 		A1F0DDC11FCD1242009B388F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438DD7D78004B297494A4F5D /* Pods-ProgressHudDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
